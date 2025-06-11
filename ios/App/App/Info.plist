@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleDisplayName</key>
+    <string>SOTACIB Commercial</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    </array>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
+    
+    <!-- Location Permissions -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Nous avons besoin de votre position pour vous localiser sur la carte et faciliter vos visites.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Nous avons besoin de votre position pour vous localiser sur la carte et faciliter vos visites.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Nous avons besoin de votre position pour vous localiser sur la carte et faciliter vos visites.</string>
+    
+    <!-- Camera Permissions (if needed) -->
+    <key>NSCameraUsageDescription</key>
+    <string>L'application nécessite l'accès à la caméra pour prendre des photos lors des visites.</string>
+    
+    <!-- Photo Library Permissions (if needed) -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>L'application nécessite l'accès à vos photos pour ajouter des images aux rapports de visite.</string>
+    
+    <!-- App Transport Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>localhost</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+    
+    <!-- Status Bar Style -->
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDefault</string>
+    
+    <!-- Prevent sleep -->
+    <key>UIApplicationExitsOnSuspend</key>
+    <false/>
+    
+    <!-- Support for iPhone X and later -->
+    <key>UIRequiresFullScreen</key>
+    <true/>
+    
+    <!-- Background mode permissions (if needed) -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>location</string>
+    </array>
+</dict>
+</plist>
